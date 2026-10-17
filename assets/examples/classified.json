@@ -1,0 +1,88 @@
+{
+  "width_mm": 180,
+  "height_mm": 140,
+  "output_stem": "rendered/classified",
+  "mappings": {
+    "temperature": {
+      "type": "classified",
+      "variable": "synthetic temperature",
+      "unit": "degC",
+      "breaks": [
+        18,
+        23,
+        28,
+        33,
+        38
+      ]
+    }
+  },
+  "panels": [
+    {
+      "id": "a",
+      "rect_mm": [
+        8,
+        28,
+        120,
+        105
+      ],
+      "crs": "EPSG:32649",
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "label": "a",
+      "layers": [
+        {
+          "type": "raster",
+          "path": "temperature.tif",
+          "mapping": "temperature"
+        }
+      ],
+      "scale_bar": {
+        "length_m": 10000,
+        "location": [
+          0.08,
+          0.12
+        ]
+      },
+      "north_arrow": {
+        "location": [
+          0.9,
+          0.73
+        ],
+        "size_mm": 7
+      }
+    }
+  ],
+  "legends": [
+    {
+      "mapping": "temperature",
+      "rect_mm": [
+        30,
+        13,
+        90,
+        3
+      ]
+    }
+  ],
+  "nodata_legend": {
+    "rect_mm": [
+      144,
+      12,
+      30,
+      5
+    ]
+  },
+  "note": {
+    "rect_mm": [
+      8,
+      2,
+      165,
+      5
+    ],
+    "text": "SYNTHETIC TEST — classified temperature (°C)"
+  },
+  "caption": "Synthetic fixture only"
+}

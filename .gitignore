@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Render output: figures, QA records, review packets, composed layouts
+rendered/
+*.qa.json
+*.config.json
+*.layout.json
+*.caption.md
+*.review/
+*.outlined.svg
+
+# Staging directory used while the output set is verified before committing it
+.*.staging-*/
+
+# Keep the shipped synthetic fixtures
+!assets/examples/**

@@ -1,0 +1,14 @@
+# Normalize line endings so the repo stays LF on every platform.
+* text=auto eol=lf
+
+# Binary fixtures and previews must never be line-ending converted.
+*.png binary
+*.tif binary
+*.tiff binary
+*.gpkg binary
+
+# Keep diffs of generated records readable where they are committed.
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf

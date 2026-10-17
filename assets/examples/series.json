@@ -1,0 +1,212 @@
+{
+  "width_mm": 180,
+  "height_mm": 150,
+  "output_stem": "rendered/series",
+  "mappings": {
+    "temperature": {
+      "type": "continuous",
+      "variable": "synthetic temperature",
+      "unit": "degC",
+      "vmin": 18,
+      "vmax": 38,
+      "cmap": "YlOrRd"
+    }
+  },
+  "comparison_groups": [
+    [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  ],
+  "panels": [
+    {
+      "id": "a",
+      "rect_mm": [
+        7,
+        85,
+        80,
+        56
+      ],
+      "crs": "EPSG:32649",
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "label": "a",
+      "layers": [
+        {
+          "type": "raster",
+          "path": "temperature.tif",
+          "mapping": "temperature"
+        }
+      ],
+      "scale_bar": {
+        "length_m": 5000,
+        "location": [
+          0.08,
+          0.12
+        ]
+      },
+      "north_arrow": {
+        "location": [
+          0.9,
+          0.73
+        ],
+        "size_mm": 5
+      }
+    },
+    {
+      "id": "b",
+      "rect_mm": [
+        93,
+        85,
+        80,
+        56
+      ],
+      "crs": "EPSG:32649",
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "label": "b",
+      "layers": [
+        {
+          "type": "raster",
+          "path": "temperature.tif",
+          "mapping": "temperature"
+        }
+      ],
+      "scale_bar": {
+        "length_m": 5000,
+        "location": [
+          0.08,
+          0.12
+        ]
+      },
+      "north_arrow": {
+        "location": [
+          0.9,
+          0.73
+        ],
+        "size_mm": 5
+      }
+    },
+    {
+      "id": "c",
+      "rect_mm": [
+        7,
+        25,
+        80,
+        56
+      ],
+      "crs": "EPSG:32649",
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "label": "c",
+      "layers": [
+        {
+          "type": "raster",
+          "path": "temperature.tif",
+          "mapping": "temperature"
+        }
+      ],
+      "scale_bar": {
+        "length_m": 5000,
+        "location": [
+          0.08,
+          0.12
+        ]
+      },
+      "north_arrow": {
+        "location": [
+          0.9,
+          0.73
+        ],
+        "size_mm": 5
+      }
+    },
+    {
+      "id": "d",
+      "rect_mm": [
+        93,
+        25,
+        80,
+        56
+      ],
+      "crs": "EPSG:32649",
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "label": "d",
+      "layers": [
+        {
+          "type": "raster",
+          "path": "temperature.tif",
+          "mapping": "temperature"
+        }
+      ],
+      "scale_bar": {
+        "length_m": 5000,
+        "location": [
+          0.08,
+          0.12
+        ]
+      },
+      "north_arrow": {
+        "location": [
+          0.9,
+          0.73
+        ],
+        "size_mm": 5
+      }
+    }
+  ],
+  "legends": [
+    {
+      "mapping": "temperature",
+      "rect_mm": [
+        48,
+        13,
+        90,
+        3
+      ],
+      "ticks": [
+        18,
+        23,
+        28,
+        33,
+        38
+      ]
+    }
+  ],
+  "nodata_legend": {
+    "rect_mm": [
+      144,
+      12,
+      30,
+      5
+    ]
+  },
+  "note": {
+    "rect_mm": [
+      7,
+      2,
+      166,
+      5
+    ],
+    "text": "SYNTHETIC TEST — shared temperature scale (°C)"
+  }
+}

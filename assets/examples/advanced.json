@@ -1,0 +1,155 @@
+{
+  "width_mm": 180,
+  "height_mm": 155,
+  "output_stem": "rendered/advanced",
+  "panels": [
+    {
+      "id": "0",
+      "label": "a",
+      "crs": "EPSG:32649",
+      "rect_mm": [
+        6,
+        70,
+        51,
+        70
+      ],
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "layers": [
+        {
+          "type": "vector",
+          "path": "points.gpkg",
+          "color": "#547A9C",
+          "proportional": {
+            "column": "count",
+            "reference_value": 1,
+            "reference_area_pt2": 10
+          },
+          "legend": {
+            "rect_mm": [
+              9,
+              18,
+              40,
+              32
+            ],
+            "values": [
+              1,
+              4,
+              9
+            ],
+            "unit": "count"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "label": "b",
+      "crs": "EPSG:32649",
+      "rect_mm": [
+        63,
+        70,
+        51,
+        70
+      ],
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "layers": [
+        {
+          "type": "flow",
+          "path": "flows.gpkg",
+          "column": "flow",
+          "reference_value": 5,
+          "reference_width_pt": 1,
+          "direction_from_vertex_order": true,
+          "legend": {
+            "rect_mm": [
+              66,
+              18,
+              40,
+              32
+            ],
+            "values": [
+              5,
+              10
+            ],
+            "unit": "units"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "label": "c",
+      "crs": "EPSG:32649",
+      "rect_mm": [
+        120,
+        70,
+        51,
+        70
+      ],
+      "extent": [
+        450000,
+        3800000,
+        498000,
+        3832000
+      ],
+      "layers": [
+        {
+          "type": "vector",
+          "path": "points.gpkg",
+          "bivariate": {
+            "x_column": "x",
+            "y_column": "y",
+            "x_breaks": [
+              0,
+              0.5,
+              1
+            ],
+            "y_breaks": [
+              0,
+              0.5,
+              1
+            ],
+            "colors": [
+              [
+                "#EEEEEE",
+                "#72A8C4"
+              ],
+              [
+                "#C37A9B",
+                "#574A7B"
+              ]
+            ]
+          },
+          "legend": {
+            "rect_mm": [
+              137,
+              18,
+              29,
+              29
+            ],
+            "label": "x / y"
+          }
+        }
+      ]
+    }
+  ],
+  "note": {
+    "rect_mm": [
+      6,
+      2,
+      168,
+      5
+    ],
+    "text": "SYNTHETIC TEST — points, flows and bivariate symbols"
+  }
+}
